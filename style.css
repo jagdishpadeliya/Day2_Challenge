@@ -14,6 +14,9 @@
 body{
     background-color: var(--Pale-blue);
     background: url("./images/pattern-background-desktop.svg");
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-color: white;
     
 }
 .container{
@@ -23,12 +26,11 @@ body{
     border-radius: 15px;
     margin: auto;
     background-color: white;
+    overflow: hidden;
 
 }
 .container .boy-dancing img{
     width: 100%;
-    border-top-left-radius: 13px;
-    border-top-right-radius: 13px;
 }
 .container .order-summary{
     text-align: center;
@@ -93,6 +95,7 @@ body{
     font-weight: 900;
     font-family: 'Courier New', Courier, monospace;
     margin-bottom: 1rem;
+    transition: background-color 0.5s ease;
 }
 .cancel-button button:hover{
     background-color:var(--Dark-blue);
@@ -108,3 +111,9 @@ body{
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+@media only screen and (max-width: 425px) {
+    body {
+        background-image: url(https://www.digitshack.com/codepen/mentor1/pattern-background-mobile.svg);
+        font-size: 14px;
+    }
+}
