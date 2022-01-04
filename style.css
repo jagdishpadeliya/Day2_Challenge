@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Red+Hat+Display:wght@500;700;900&display=swap');
+:root{
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);    
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--Pale-blue);
+    background: url("./images/pattern-background-desktop.svg");
+    
+}
+.container{
+    border: 2px solid black;
+    width: 350px;
+    margin-top: 4rem !important;
+    border-radius: 15px;
+    margin: auto;
+    background-color: white;
+
+}
+.container .boy-dancing img{
+    width: 100%;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+}
+.container .order-summary{
+    text-align: center;
+    width: 100%;
+}
+.order-summary h2{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-family: 'Outfit', sans-serif;
+}
+.container .order-summary p{
+    margin-top: 1rem;
+    width: 310px;
+    margin: auto;
+    font-size: 16px;
+    color:var(--Desaturated-blue);
+    font-family: 'Red Hat Display', sans-serif;
+}
+.order-details{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--Very-pale-blue);
+    border-radius: 10px;
+}
+.order-details img{
+    margin-right: 30px;
+}
+.order-details div{
+    display: flex;
+    flex-direction: column;
+    margin-right: 80px;
+}
+.order-details div p{
+    margin-bottom: 4px;
+}
+.order-details p:first-child{
+    font-weight: 600;
+}
+.order-details p:last-child{
+    color:var(--Desaturated-blue);
+}
+.order-details p span{
+    font-weight: 800;
+}
+.order-details p span:hover{
+    color: var(--Dark-blue);
+}
+.cancel-button{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.cancel-button button{
+    border-radius: 7px;
+    background-color: var(--Bright-blue);
+    border: none;
+    padding: 14px;
+    color: white;
+    font-size: 18px;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 1rem;
+}
+.cancel-button button:hover{
+    background-color:var(--Dark-blue);
+}
+.cancel-button p{
+    font-size: 20px;
+    font-weight: 600;
+    margin: auto;
+    color: var(--Desaturated-blue);
+}
+.cancel-button p:hover{
+    color: var(--Dark-blue);
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
